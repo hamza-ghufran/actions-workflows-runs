@@ -12,6 +12,18 @@ function getServices() {
     return argv.services.split(",")
 }
 
+task('install', function(done) {
+    const services = getServices()
+    const runs = []
+    services.forEach(s => runs.push(`npm i --prefix services/${s}`))
+
+    concurrently(runs).then(() => {
+        done()
+    }, (err) => {
+        done(err)
+    })
+})
+
 task('test', function(done) {
     const services = getServices()
     const tests = []
