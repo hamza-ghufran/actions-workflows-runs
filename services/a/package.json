@@ -1,0 +1,23 @@
+{
+    "name": "a",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "set NODE_ENV=test&& jest --detectOpenHandles"
+    },
+    "jest": {
+        "collectCoverage": true,
+        "testMatch": [
+            "**/test/**/*.test.js"
+        ]
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^27.3.1"
+    }
+}
