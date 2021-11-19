@@ -1,0 +1,5 @@
+{
+  "secrets": {
+    "someSecret": "SOME_SECRET"
+  }
+}
