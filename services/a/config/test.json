@@ -1,1 +1,6 @@
-{}
+{
+  "secrets": {
+    "someSecret": "SOME_SECRET",
+    "url": "TEST_ENDPOINT"
+  }
+}

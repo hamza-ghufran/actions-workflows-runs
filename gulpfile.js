@@ -24,6 +24,15 @@ task('install', function(done) {
     })
 })
 
+task('ci', function (done) {
+    const services = getServices()
+    const runs = []
+    services.forEach(s => runs.push(`npm ci --prefix services/${s}`))
+
+    concurrently(runs)
+    done()
+  })
+
 task('test', function(done) {
     const services = getServices()
     const tests = []
