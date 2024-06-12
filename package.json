@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^6.4.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "yargs": "^17.2.1"
   }
 }
